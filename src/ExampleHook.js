@@ -11,6 +11,10 @@ export default function ExampleHook(){
             <button onClick={() => setCount(count + 1)} class="bg-red-400 font-semibold text-white py-2 px-4 rounded-xl">
                 Click me
             </button>
+            <button onClick={(e) => {console.log(e,this);}}  class="bg-blue-400 font-semibold text-white py-2 px-4 rounded-xl">
+                Click me
+            </button>
+            
         </div>
 
     );
