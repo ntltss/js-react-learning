@@ -8,6 +8,7 @@ import ClassHello from './ClassHello';
 import Hello from './Hello';
 import ExampleState from './ExampleState';
 import reactDom from 'react-dom';
+import ExampleHook from './ExampleHook';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -44,6 +45,13 @@ reactDom.render(
     <ExampleState/>
   </React.StrictMode>,
   document.getElementById('root4')
+);
+
+reactDom.render(
+  <React.StrictMode>
+    <ExampleHook/>
+  </React.StrictMode>,
+  document.getElementById('root5')
 );
 
 // If you want to start measuring performance in your app, pass a function
