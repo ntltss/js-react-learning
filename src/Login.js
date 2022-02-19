@@ -12,7 +12,10 @@ function Login(){
                 <label class="text-red-500">Password</label>
                 <input  class="border-dotted border-4 border-gray-400" type="password"/>
                 <button class="bg-indigo-700 font-semibold text-white py-2 px-4 rounded-xl">ログイン</button>
+                <ul>
+            </ul>
             </form>
+
         </div>
     );
 }
