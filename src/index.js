@@ -136,11 +136,7 @@ reactDom.render(
   </React.StrictMode>,
   document.getElementById('root14')
 );
-<<<<<<< HEAD
-//test_conflict_from_Windows
-=======
 //test_conflict_from_mac
->>>>>>> test_conflict_from_mac
 //test_from_Windows
 //gittest_conflict_from_mac
 
