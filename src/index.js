@@ -15,6 +15,14 @@ import SampleRouter from './SampleRouter';
 import { BrowserRouter } from 'react-router-dom';
 import TestRouter from './TestRouter';
 import Root from './Root';
+import SampleModal from './SampleModal';
+
+import SampleUseEffect from './SampleUseEffect';
+import SampleUseEffectFetch from './SampleUseEffectFetch';
+import SampleUseEffectFetchAsyncAwait from './SampleUseEffectFetchAsyncAwait';
+import Count from './Count';
+import CountControle from './CountControl';
+
 
 // ReactDOM.render(
 //   <React.StrictMode>
@@ -81,13 +89,53 @@ import Root from './Root';
 //   document.getElementById('root8')
 // );
 
-reactDom.render(
-  <BrowserRouter>
-    <TestRouter/>
-  </BrowserRouter>,
-  document.getElementById('root9')
-);
+// SPAのサンプル
+// reactDom.render(
+//   <BrowserRouter>
+//     <TestRouter/>
+//   </BrowserRouter>,
+//   document.getElementById('root9')
+// );
 
+// モーダルウィンドウのサンプル
+// reactDom.render(
+//   <React.StrictMode>
+//     <SampleModal/>
+//   </React.StrictMode>,
+//   document.getElementById('root10')
+// );
+
+// // userEffectのサンプル(ボタン押下)
+// reactDom.render(
+//   <React.StrictMode>
+//     <SampleUseEffect/>
+//   </React.StrictMode>,
+//   document.getElementById('root11')
+// );
+
+// // userEffectのサンプル(外部からデータをfetch)
+// reactDom.render(
+//   <React.StrictMode>
+//     <SampleUseEffectFetch/>
+//   </React.StrictMode>,
+//   document.getElementById('root12')
+// );
+
+// // userEffectのサンプル(外部からデータをfetch)_async,await
+// reactDom.render(
+//   <React.StrictMode>
+//     <SampleUseEffectFetchAsyncAwait/>
+//   </React.StrictMode>,
+//   document.getElementById('root13')
+// );
+
+// コンポーネントのアンマウントのサンプル
+reactDom.render(
+  <React.StrictMode>
+    <CountControle/>
+  </React.StrictMode>,
+  document.getElementById('root14')
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

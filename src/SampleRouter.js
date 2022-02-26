@@ -8,14 +8,6 @@ import {
 import HelloA from './HelloA';
 import HelloB from './HelloB';
 
-// function HelloA() {
-//   return <h1>HelloA</h1>;
-// }
-
-// function HelloB() {
-//   return <h1>HelloB</h1>;
-// }
-
 class SampleRouter extends React.Component {
   render() {
     return (
