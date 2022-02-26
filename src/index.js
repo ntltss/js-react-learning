@@ -22,6 +22,7 @@ import SampleUseEffectFetch from './SampleUseEffectFetch';
 import SampleUseEffectFetchAsyncAwait from './SampleUseEffectFetchAsyncAwait';
 import Count from './Count';
 import CountControle from './CountControl';
+import SampleUseLayoutEffect from './SampleUseLayoutEffect';
 
 
 // ReactDOM.render(
@@ -129,14 +130,21 @@ import CountControle from './CountControl';
 //   document.getElementById('root13')
 // );
 
-// コンポーネントのアンマウントのサンプル
+// // コンポーネントのアンマウントのサンプル
+// reactDom.render(
+//   <React.StrictMode>
+//     <CountControle/>
+//   </React.StrictMode>,
+//   document.getElementById('root14')
+// );
+
+// useLayoutEffectのサンプル
 reactDom.render(
   <React.StrictMode>
-    <CountControle/>
+    <SampleUseLayoutEffect/>
   </React.StrictMode>,
-  document.getElementById('root14')
+  document.getElementById('root15')
 );
-
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
