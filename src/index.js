@@ -1,28 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
 // import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Login from './Login';
-import ClassHello from './ClassHello';
-import Hello from './Hello';
-import ExampleState from './ExampleState';
-import reactDom from 'react-dom';
-import ExampleHook from './ExampleHook';
-import SampleList from './SampleList';
-import HelloChange from './HelloChange';
-import SampleRouter from './SampleRouter';
-import { BrowserRouter } from 'react-router-dom';
-import TestRouter from './TestRouter';
-import Root from './Root';
-import SampleModal from './SampleModal';
+import reportWebVitals from "./reportWebVitals";
+import Login from "./Login";
+import ClassHello from "./ClassHello";
+import Hello from "./Hello";
+import ExampleState from "./ExampleState";
+import reactDom from "react-dom";
+import ExampleHook from "./ExampleHook";
+import SampleList from "./SampleList";
+import HelloChange from "./HelloChange";
+import SampleRouter from "./SampleRouter";
+import { BrowserRouter } from "react-router-dom";
+import TestRouter from "./TestRouter";
+import Root from "./Root";
+import SampleModal from "./SampleModal";
 
-import SampleUseEffect from './SampleUseEffect';
-import SampleUseEffectFetch from './SampleUseEffectFetch';
-import SampleUseEffectFetchAsyncAwait from './SampleUseEffectFetchAsyncAwait';
-import Count from './Count';
-import CountControle from './CountControl';
-
+import SampleUseEffect from "./SampleUseEffect";
+import SampleUseEffectFetch from "./SampleUseEffectFetch";
+import SampleUseEffectFetchAsyncAwait from "./SampleUseEffectFetchAsyncAwait";
+import Count from "./Count";
+import CountControle from "./CountControl";
+import SampleUseContext from "./SampleUseContext";
+import SampleUseContextWithUseState from "./SampleUseContextWithUseState";
+import Counter from "./components/Counter";
+import Counter2 from "./components/Counter2";
+import Counter3 from "./components/Counter3";
+import SampleUseContextWithUseReducer from "./SampleUseContextWithUseReducer";
+import SampleUseContextWithContext from "./SampleUseContextWithContext";
 
 // ReactDOM.render(
 //   <React.StrictMode>
@@ -129,14 +135,69 @@ import CountControle from './CountControl';
 //   document.getElementById('root13')
 // );
 
-// コンポーネントのアンマウントのサンプル
+// // コンポーネントのアンマウントのサンプル
+// reactDom.render(
+//   <React.StrictMode>
+//     <CountControle/>
+//   </React.StrictMode>,
+//   document.getElementById('root14')
+// );
+
+// // useContextのサンプル
+// reactDom.render(
+//   <React.StrictMode>
+//     <SampleUseContext />
+//   </React.StrictMode>,
+//   document.getElementById("root15")
+// );
+
+// // useContext(with useState)のサンプル
+// reactDom.render(
+//   <React.StrictMode>
+//     <SampleUseContextWithUseState />
+//   </React.StrictMode>,
+//   document.getElementById("root16")
+// );
+
+// // useReducer(シンプル版)のサンプル
+// reactDom.render(
+//   <React.StrictMode>
+//     <Counter />
+//   </React.StrictMode>,
+//   document.getElementById("root17")
+// );
+
+// // useReducer(ボタン増やし版)のサンプル
+// reactDom.render(
+//   <React.StrictMode>
+//     <Counter2 />
+//   </React.StrictMode>,
+//   document.getElementById("root18")
+// );
+
+// // useReducer(type,payload追加版)のサンプル
+// reactDom.render(
+//   <React.StrictMode>
+//     <Counter3 />
+//   </React.StrictMode>,
+//   document.getElementById("root19")
+// );
+
+// // useContext(with useReducer)のサンプル
+// reactDom.render(
+//   <React.StrictMode>
+//     <SampleUseContextWithUseReducer />
+//   </React.StrictMode>,
+//   document.getElementById("root20")
+// );
+
+// useContext(with Context用のコンポーネント)のサンプル
 reactDom.render(
   <React.StrictMode>
-    <CountControle/>
+    <SampleUseContextWithContext />
   </React.StrictMode>,
-  document.getElementById('root14')
+  document.getElementById("root21")
 );
-
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
