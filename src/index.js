@@ -16,7 +16,6 @@ import { BrowserRouter } from "react-router-dom";
 import TestRouter from "./TestRouter";
 import Root from "./Root";
 import SampleModal from "./SampleModal";
-
 import SampleUseEffect from "./SampleUseEffect";
 import SampleUseEffectFetch from "./SampleUseEffectFetch";
 import SampleUseEffectFetchAsyncAwait from "./SampleUseEffectFetchAsyncAwait";
@@ -142,6 +141,13 @@ import SampleUseContextWithContext from "./SampleUseContextWithContext";
 //   </React.StrictMode>,
 //   document.getElementById('root14')
 // );
+
+// // useLayoutEffectのサンプル
+// reactDom.render(
+//   <React.StrictMode>
+//     <SampleUseLayoutEffect/>
+//   </React.StrictMode>,
+//   document.getElementById('root15')
 
 // // useContextのサンプル
 // reactDom.render(
